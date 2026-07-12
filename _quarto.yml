@@ -28,11 +28,7 @@ website:
         text: Software
       - href: comp.qmd
         text: Computational projects
-      - href: posts/index.qmd
-        text: Blog
-    right:
-      - icon: rss
-        href: posts/index.xml
+
 
   page-footer:
     background: light
