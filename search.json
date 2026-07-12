@@ -1,0 +1,107 @@
+[
+  {
+    "objectID": "software.html",
+    "href": "software.html",
+    "title": "Software",
+    "section": "",
+    "text": "PeakSEA is an R package to compute rank-based enrichment of genomic regions in a set of peaks. It is designed to be used with ATAC-seq, ChIP-seq, and other peak-based genomic data. The package takes advantage of the GSEA method to compute enrichment scores for a given set of pre-ranked peaks against reference peak sets of interest (e.g. conserved regions, GWAS loci), allowing users to identify genomic regions that are significantly enriched in their data."
+  },
+  {
+    "objectID": "software.html#peaksea",
+    "href": "software.html#peaksea",
+    "title": "Software",
+    "section": "",
+    "text": "PeakSEA is an R package to compute rank-based enrichment of genomic regions in a set of peaks. It is designed to be used with ATAC-seq, ChIP-seq, and other peak-based genomic data. The package takes advantage of the GSEA method to compute enrichment scores for a given set of pre-ranked peaks against reference peak sets of interest (e.g. conserved regions, GWAS loci), allowing users to identify genomic regions that are significantly enriched in their data."
+  },
+  {
+    "objectID": "software.html#bigqtl",
+    "href": "software.html#bigqtl",
+    "title": "Software",
+    "section": "bigQTL",
+    "text": "bigQTL\nbigQTL is an R package extending bigsnpr to perform fast and efficient cis-QTL mapping on genomic datasets. Its main feature is its ability to do step-wise and all-but-one conditioning efficiently across many molecular traits."
+  },
+  {
+    "objectID": "software.html#plyranges",
+    "href": "software.html#plyranges",
+    "title": "Software",
+    "section": "plyranges",
+    "text": "plyranges\nI am a contributor to the plyranges package as part of the tidyomics consortium. plyranges is an R package that provides a grammar for manipulating genomic ranges in a tidy and consistent manner. It allows users to perform common operations on genomic ranges, such as filtering, joining, and summarizing, using the tidy syntax."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Pierre-Paul Axisa",
+    "section": "",
+    "text": "I am a computational genomics researcher at the Center for Basic Metabolic Research (CBMR) at the University of Copenhagen. I use integrative genetics and genomics approaches to study human physiology in health and disease, with a particular interest in variant-to-function genomics. I have a long background studying immune system dysfunction in the context of autoimmunity and cancer. I am currently working on projects related to the genetics of metabolic diseases and inflammation, notably the role of adipose tissue.\nI am also passionate about anything related to the R programming language, especially the tidyverse ecosystem in the context of genomic data analysis. I contribute to the tidyomics project and other open-source software projects, and I am always looking for ways to improve the accessibility and reproducibility of computational biology research.\n\n\nReuseCC BY 4.0"
+  },
+  {
+    "objectID": "comp.html",
+    "href": "comp.html",
+    "title": "Computational projects",
+    "section": "",
+    "text": "Source code related to my computational projects are stored at the ImmuneAxisa GitHub page\n\nSingle-cell RNA-seq analysis of immune cells from Multiple Sclerosis patients treated with anti-CD20\n\nPublication: Wei et al., 2025\nCode: Github repository\nData availability: figshare\n\n\n\nSingle-cell RNA-seq analysis of Natural Killer (NK) cells from Multiple myeloma patients vs controls\n\nPublication: Blanquart et al., 2024\nCode: Github repository\nAdditional data exploration: website\nData availability: Zenodo\n\n\n\nTranscriptomics analyses of T regulatory cells in the context of HDAC7 deletion and HDAC7 R166H variant\n\nPublication: Axisa et al., 2022\nCode: Github repository\nData availability: figshare\n\n\n\n\n\nReuseCC BY 4.0"
+  },
+  {
+    "objectID": "publications.html#section",
+    "href": "publications.html#section",
+    "title": "Publications",
+    "section": "2025",
+    "text": "2025\n\nUnravelling the complex inflammatory landscape of COVID-19 infection: a pathway to biomarkers identification in infection-associated delirium in the ICU\nT Born, M Perreau, PP Axisa, C Fenwick, A Pinto, N Ben-Hamouda, AO Rossetti, RD Pasquier, J-D Chiche, R Bernard-Valnet\nIntensive Care Medicine Experimental; 12/2025\n\n\nTranscriptomic profiling after B cell depletion reveals central and peripheral immune cell changes in multiple sclerosis\nJ Wei, J Moon, Y Yasumizu, L Zhang, K Radassi, N Buitrago-Pocasangre, ME Deerhake, N Strauli, C-W Chen, A Herman, R Pedotti, C Raposo, I Yim, J Pappalardo, EE Longbrake, TS Sumida, PP Axisa*, DA Hafler*\n* equal contribution\nThe Journal of Clinical Investigation; 6/2025\n\n\nCirculating tumor-reactive KIR+CD8+ T cells suppress anti-tumor immunity in patients with melanoma\nBY Lu, LE Lucca, W Lewis, J Wang, CV Nogueira, S Heer, V Rayon-Estrada, PP Axisa, SM Reeves, NC Buitrago-Pocasangre, GH Pham, ML Kojima, Wei, L Aizenbud, A Bacchiocchi, L Zhang, JJ Walewski, V Chiang, K Olino, J Clune, R Halaban, Y Kluger, AJ Coyle, J Kisielow, F-J Obermair, HM Kluger, DA Hafler\nNature Immunology; 1/2025"
+  },
+  {
+    "objectID": "publications.html#section-1",
+    "href": "publications.html#section-1",
+    "title": "Publications",
+    "section": "2024",
+    "text": "2024\n\nNK cells with adhesion defects and reduced cytotoxic functions are associated with a poor prognosis in multiple myeloma\nE Blanquart, Rüçh Ekren, B Rigaud, M-Vér Joubert, V Baylot, Hélèn Daunes, M Cuisinier, M Villard, Nèg Carrié, Cél Mazzotti, LE Lucca, A Perrot, J Corre, T Walzer, Hé Avet-Loiseau, PP Axisa*, L Martinet*\n* equal contribution\nBlood; 9/2024\n\n\nThe tidyomics ecosystem: Enhancing omic data analyses\nWJ Hutchison, TJ Keyes, T Consortium, HL Crowell, J Serizay, C Soneson, ES Davis, N Sato, L Moses, B Tarlinton, AA Nahid, M Kosmac, Q Clayssen, V Yuan, W Mu, J-E Park, I Mamede, MH Ryu, PP Axisa, P Paiz, C-L Poon, M Tang, R Gottardo, M Morgan, S Lee, M Lawrence, SC Hicks, GP Nolan, KL Davis, AT Papenfuss, MI Love, S Mangiola\nNature methods; 7/2024\n\n\nGenetic mapping across autoimmune diseases reveals shared associations and mechanisms\nMR Lincoln, N Connally, PP Axisa, C Gasperi, M Mitrovic, Dv Heel, C Wijmenga, S Withoff, IH Jonkers, L Padyukov, SS Rich, RR Graham, PM Gaffney, CD Langefeld, TJ Vyse, DA Hafler, S Chun, SR Sunyaev, C Cotsapas\nNature genetics; 5/2024"
+  },
+  {
+    "objectID": "publications.html#section-2",
+    "href": "publications.html#section-2",
+    "title": "Publications",
+    "section": "2023",
+    "text": "2023\n\nTCR-independent CD137 (4-1BB) signaling promotes CD8+-exhausted T cell proliferation and terminal differentiation\nAC Pichler, Nèg Carrié, M Cuisinier, S Ghazali, A Voisin, PP Axisa, M Tosolini, Cél Mazzotti, DP Golec, S Maheo, LD Souto, Rüçh Ekren, E Blanquart, L Lemaitre, V Feliu, M-Vér Joubert, JL Cannons, C Guillerey, Hé Avet-Loiseau, TH Watts, BL Salomon, O Joffre, Y Grinberg-Bleyer, PL Schwartzberg, LE Lucca, L Martinet\nImmunity; 7/2023"
+  },
+  {
+    "objectID": "publications.html#section-3",
+    "href": "publications.html#section-3",
+    "title": "Publications",
+    "section": "2022",
+    "text": "2022\n\nA multiple sclerosis–protective coding variant reveals an essential role for HDAC7 in regulatory T cells\nPP Axisa, TM Yoshida, LE Lucca, HG Kasler, MR Lincoln, GH Pham, DD Priore, J-M Carpier, CL Lucas, E Verdin, TS Sumida, DA Hafler\nScience Translational Medicine; 12/2022\n\n\nImpaired TIGIT expression on B cells drives circulating follicular helper T cell expansion in multiple sclerosis\nH Asashima, PP Axisa, THG Pham, EE Longbrake, WE Ruff, N Lele, I Cohen, K Raddassi, TS Sumida, DA Hafler\nThe Journal of Clinical Investigation; 10/2022\n\n\nType I interferon transcriptional network regulates expression of coinhibitory receptors in human T cells\nTS Sumida, S Dulberg, JC Schupp, MR Lincoln, HA Stillwell, PP Axisa, M Comi, A Unterman, N Kaminski, A Madi, VK Kuchroo, DA Hafler\nNature Immunology; 4/2022"
+  },
+  {
+    "objectID": "publications.html#section-4",
+    "href": "publications.html#section-4",
+    "title": "Publications",
+    "section": "2021",
+    "text": "2021\n\nCirculating clonally expanded T cells reflect functions of tumor-infiltrating T cells\nLE Lucca, PP Axisa, B Lu, B Harnett, S Jessel, L Zhang, K Raddassi, L Zhang, K Olino, J Clune, M Singer, HM Kluger, DA Hafler\nJournal of Experimental Medicine; 3/2021"
+  },
+  {
+    "objectID": "publications.html#section-5",
+    "href": "publications.html#section-5",
+    "title": "Publications",
+    "section": "2020",
+    "text": "2020\n\nEpigenetic fine-mapping: identification of causal mechanisms for autoimmunity\nMR Lincoln, PP Axisa*, DA Hafler\n* corresponding author\nCurrent Opinion in Immunology; 12/2020"
+  },
+  {
+    "objectID": "publications.html#section-6",
+    "href": "publications.html#section-6",
+    "title": "Publications",
+    "section": "2019",
+    "text": "2019\n\nTIGIT signaling restores suppressor function of Th1 Tregs\nLE Lucca, PP Axisa, ER Singer, NM Nolan, M Dominguez-Villar, DA Hafler\nJCI insight; 2/2019"
+  },
+  {
+    "objectID": "publications.html#section-7",
+    "href": "publications.html#section-7",
+    "title": "Publications",
+    "section": "2017",
+    "text": "2017\n\nPodoplanin is a negative regulator of Th17 inflammation\nAN Nylander, GD Ponath, PP Axisa, M Mubarak, M Tomayko, VK Kuchroo, D Pitt, DA Hafler\nJCI insight; 9/2017"
+  },
+  {
+    "objectID": "publications.html#section-8",
+    "href": "publications.html#section-8",
+    "title": "Publications",
+    "section": "2016",
+    "text": "2016\n\nMyelin oligodendrocyte glycoprotein induces incomplete tolerance of CD4+ T cells specific for both a myelin and a neuronal self‐antigen in mice\nLE Lucca*, PP Axisa*, M Aloulou, C Perals, A Ramadan, P Rufas, B Kyewski, J Derbinski, N Fazilleau, LT Mars, RS Liblau\n* equal contribution\nEuropean journal of immunology; 9/2016\n\n\nMultiple sclerosis: genetics, biomarkers, treatments\nPP Axisa, DA Hafler\nCurrent opinion in neurology; 6/2016\n\n\nIn situ expansion of T cells that recognize distinct self-antigens sustains autoimmunity in the CNS\nA Ramadan, LE Lucca, N Carrie, S Desbois, PP Axisa, M Hayder, J Bauer, RS Liblau, LT Mars\nBrain; 5/2016"
+  }
+]
