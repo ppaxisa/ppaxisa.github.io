@@ -41,7 +41,7 @@ format:
   html:
     theme:
       light: sandstone
-      dark: Darkly
+      dark: darkly
     toc: true
     highlight-style: github
     grid:
