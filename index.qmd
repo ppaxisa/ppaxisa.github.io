@@ -1,0 +1,21 @@
+---
+title: "Pierre-Paul Axisa"
+about:
+  template: trestles
+  image: images/avatar.jpg
+  links:
+    - text: "{{< iconify academicons orcid size=1.2em title='ORCID' >}}"
+      href: https://orcid.org/0000-0003-1446-3922
+    - text: "{{< iconify academicons google-scholar-square size=1.2em title='Scholar' >}}"
+      href: https://scholar.google.com/citations?user=X6aAbk0AAAAJ
+    - icon: github
+      href: https://github.com/ImmuneAxisa
+    - text: "{{< iconify fa6-brands bluesky title='Bluesky' >}}"
+      href: https://bsky.app/profile/ppaxisa.bsky.social
+    - icon: linkedin
+      href: https://linkedin.com/in/pierre-paul-axisa-22523b89
+---
+
+I am a computational genomics researcher at the [Center for Basic Metabolic Research (CBMR) at the University of Copenhagen](https://cbmr.ku.dk). I use integrative genetics and genomics approaches to study human physiology in health and disease, with a particular interest in variant-to-function genomics. I have a long background studying immune system dysfunction in the context of autoimmunity and cancer. I am currently working on projects related to the genetics of metabolic diseases and inflammation, notably the role of adipose tissue.
+
+I am also passionate about anything related to the R programming language, especially the tidyverse ecosystem in the context of genomic data analysis. I contribute to the [tidyomics project](https://github.com/tidyomics) and other open-source software projects, and I am always looking for ways to improve the accessibility and reproducibility of computational biology research.

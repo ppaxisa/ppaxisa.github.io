@@ -1,0 +1,107 @@
+---
+title: "Publications"
+execute:
+  echo: false
+  warning: false
+---
+
+[{{< iconify academicons orcid size=1.2em title='ORCID' >}}](https://orcid.org/0000-0003-1446-3922)
+[{{< iconify academicons google-scholar-square size=1.2em title='Scholar' >}}](https://scholar.google.com/citations?user=X6aAbk0AAAAJ)
+
+```{css}
+h4 {
+  color: #167753;
+}
+```
+
+```{r}
+#| label: setup
+#| include: false
+
+library(vitae)
+library(tidyverse)
+
+USE_CACHE <- TRUE
+```
+
+```{r}
+#| eval: !expr '!USE_CACHE'
+
+res <- scholar::get_publications("X6aAbk0AAAAJ", flush = T, sortby = "year") %>%
+  mutate(author = scholar::get_complete_authors("X6aAbk0AAAAJ", pubid)) %>%
+  rowwise() %>%
+  mutate(full_date = try(scholar::get_publication_date("X6aAbk0AAAAJ", pubid))) %>%
+  ungroup() %>%
+  separate(full_date, c("year", "month"), sep = "\\/", extra = "drop", convert = TRUE) %>%
+  mutate(month = replace_na(month, 13))
+res2 <- res %>%
+  arrange(-year, -month) %>%
+  mutate(author = gsub("P‐P|P-P", "PP", as.character(author))) %>%
+  mutate(author = str_split(author, ",")) %>%
+  mutate(rank = purrr::map(author, ~grep("Axisa", .))) %>%
+  mutate(n_authors = purrr::map(author, length)) %>%
+  unnest(n_authors) %>%
+  # mutate(author = ifelse(rank < 4 & n_authors > 3, 
+  #                        purrr::map2(rank, author, ~`[`(.y,1:.x) %>% c(" et al.")), 
+  #                        ifelse(rank == (n_authors - 1) & n_authors > 3,
+  #                               purrr::map2(rank, author, ~c(`[`(.y,1), "...", `[`(.y, .x:length(.y)))),
+  #                               ifelse(n_authors > 3,
+  #                                      purrr::map2(rank, author, ~`[`(.y,1) %>% c(" et al.")),
+  #                                      author)))) %>%
+  mutate(author = purrr::map(author, ~paste(.x, collapse = ","))) %>%
+  #mutate(author = ifelse(grepl("KIR|CD137",title),
+  #                             gsub("PP Axisa.*$", "PP Axisa, et al.", author),
+  #                             author)) %>%
+  mutate(author = gsub("Rël", "R", author)) %>%
+  mutate(author = ifelse(grepl("European", journal) & year == "2016", 
+                         gsub("LE Lucca, PP Axisa", "LE Lucca\\\\*, PP Axisa\\\\*", author),
+                         author)) %>%
+  mutate(author = ifelse(grepl("^J Wei", author), 
+                         gsub("PP Axisa, DA Hafler", "PP Axisa\\\\*, DA Hafler\\\\*", author),
+                         author)) %>%
+  mutate(author = ifelse(grepl("^E Blanquart", author), 
+                         gsub("PP Axisa, L Martinet", "PP Axisa\\\\*, L Martinet\\\\*", author),
+                         author)) %>%
+  mutate(comments = ifelse(grepl("\\*", author), "* equal contribution", NA)) %>%
+  mutate(author = ifelse(grepl("Epigenetic fine", title), gsub("PP Axisa", "PP Axisa\\\\*", author), author)) %>%
+  mutate(comments = ifelse(grepl("Epigenetic fine", title), "* corresponding author", comments)) %>%
+  mutate(author = gsub("PP Axisa", "<u>PP Axisa</u>", author)) %>%
+  mutate(journal = paste0("_", journal, "_")) %>%
+  mutate(journal = ifelse(grepl("medRxiv|bioRxiv", journal),
+                          paste0(journal, ". __preprint__"),
+                          journal))
+
+write_tsv(res2, "data/publications.tsv")
+
+```
+
+```{r}
+#| output: asis
+
+
+if(USE_CACHE) {
+  res2 <- read_tsv("data/publications.tsv")
+}
+res3 <- res2 %>%
+  mutate(year_split = year) %>%
+  group_by(year_split) %>%
+  nest() %>%
+  deframe()
+for(year_index in 1:length(res3)){
+
+  cat("##", names(res3)[year_index], "\n\n")
+  res4 <- res3[[year_index]]
+
+  for(row_index in 1:nrow(res4)){
+    cat("####", res4$title[row_index], "\n\n")
+    cat(res4$author[row_index], "\n\n")
+    if(!is.na(res4$comments[row_index])){
+      cat("\\", res4$comments[row_index], "\n\n", sep = "")
+    }
+    cat(res4$journal[row_index],"; ", res4$month[row_index],"/", res4$year[row_index], "\n\n", sep = "")
+    cat("\n\n")
+  }
+}
+
+```
+

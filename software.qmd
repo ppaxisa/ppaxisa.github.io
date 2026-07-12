@@ -1,0 +1,15 @@
+---
+title: "Software"
+---
+
+## [PeakSEA](https://immuneaxisa.github.io/PeakSEA/) 
+
+PeakSEA is an R package to compute rank-based enrichment of genomic regions in a set of peaks. It is designed to be used with ATAC-seq, ChIP-seq, and other peak-based genomic data. The package takes advantage of the GSEA method to compute enrichment scores for a given set of pre-ranked peaks against reference peak sets of interest (e.g. conserved regions, GWAS loci), allowing users to identify genomic regions that are significantly enriched in their data.
+
+## [bigQTL](https://github.com/ImmuneAxisa/bigQTL)
+
+bigQTL is an R package extending [`bigsnpr`](https://privefl.github.io/bigsnpr/) to perform fast and efficient cis-QTL mapping on genomic datasets. Its main feature is its ability to do step-wise and all-but-one conditioning efficiently across many molecular traits. 
+
+## [plyranges](https://tidyomics.github.io/plyranges/)
+
+I am a contributor to the `plyranges` package as part of the [tidyomics](https://github.com/tidyomics) consortium. `plyranges` is an R package that provides a grammar for manipulating genomic ranges in a tidy and consistent manner. It allows users to perform common operations on genomic ranges, such as filtering, joining, and summarizing, using the tidy syntax. 

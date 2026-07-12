@@ -1,0 +1,26 @@
+---
+title: "Computational projects"
+---
+
+Source code related to my computational projects are stored at the [ImmuneAxisa GitHub page](https://github.com/ImmuneAxisa)
+
+### Single-cell RNA-seq analysis of immune cells from Multiple Sclerosis patients treated with anti-CD20
+
+* Publication: [Wei et al., 2025](https://doi.org/10.1172/JCI182790)
+* Code: [Github repository](https://github.com/ImmuneAxisa/Ocrevus_manuscript)
+* Data availability: [figshare](https://doi.org/10.6084/m9.figshare.28204532)
+
+### Single-cell RNA-seq analysis of Natural Killer (NK) cells from Multiple myeloma patients vs controls
+
+* Publication: [Blanquart et al., 2024](https://doi.org/10.1182/blood.2023023529)
+* Code: [Github repository](https://github.com/ImmuneAxisa/NKcell_dysfunction_MM_Blood24)
+* Additional data exploration: [website](https://immuneaxisa.github.io/NKcell_dysfunction_MM_Blood24/index.html)
+* Data availability: [Zenodo](https://doi.org/10.5281/zenodo.13359147)
+
+### Transcriptomics analyses of T regulatory cells in the context of HDAC7 deletion and HDAC7 R166H variant
+
+* Publication: [Axisa et al., 2022]()
+* Code: [Github repository](https://github.com/ImmuneAxisa/HDAC7_Treg_manuscript)
+* Data availability: [figshare](https://doi.org/10.6084/m9.figshare.21539098)
+
+
