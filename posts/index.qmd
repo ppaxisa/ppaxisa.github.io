@@ -1,0 +1,13 @@
+---
+title: "Blog"
+listing:
+  contents: "."
+  sort: "date desc"
+  feed:
+    type: full
+  fields: [date, title, description, reading-time, categories]
+  max-description-length: 300
+citation: 
+  id: "Pierre-Paul Axisa's blog"
+  issued: 2026
+---
