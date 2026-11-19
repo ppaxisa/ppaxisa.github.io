@@ -31,7 +31,7 @@ website:
 
 
   page-footer:
-    background: light
+    background: dark
     center: "© 2026 · Built with [Quarto](https://quarto.org)"
     right:
       - icon: github
@@ -41,7 +41,7 @@ format:
   html:
     theme:
       light: sandstone
-      dark: darkly
+      dark: [sandstone, styles/dark-sandstone.scss]
     toc: true
     highlight-style: github
     grid:

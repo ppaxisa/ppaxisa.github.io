@@ -19,3 +19,5 @@ about:
 I am a computational genomics researcher at the [Center for Basic Metabolic Research (CBMR) at the University of Copenhagen](https://cbmr.ku.dk). I use integrative genetics and genomics approaches to study human physiology in health and disease, with a particular interest in variant-to-function genomics. I have a long background studying immune system dysfunction in the context of autoimmunity and cancer. I am currently working on projects related to the genetics of metabolic diseases and inflammation, notably the role of adipose tissue.
 
 I am also passionate about anything related to the R programming language, especially the tidyverse ecosystem in the context of genomic data analysis. I contribute to the [tidyomics project](https://github.com/tidyomics) and other open-source software projects, and I am always looking for ways to improve the accessibility and reproducibility of computational biology research.
+
+

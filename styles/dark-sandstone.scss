@@ -1,0 +1,61 @@
+/*-- scss:defaults --*/
+
+$body-bg: #1b1d1f !default;
+$body-color: #e7dfd2 !default;
+$link-color: #9fca63 !default;
+$link-hover-color: #b5d980 !default;
+$border-color: #4b5154 !default;
+
+/*-- scss:rules --*/
+
+:root {
+  --bs-primary: #6e98c5;
+  --bs-primary-rgb: 110, 152, 197;
+  --bs-success: #9dcc60;
+  --bs-info: #52bfe9;
+  --bs-warning: #f39a67;
+  --bs-danger: #e57c78;
+  --bs-border-color-translucent: rgba(255, 255, 255, 0.14);
+}
+
+/* Lighter top banner / navbar */
+.navbar,
+#quarto-header .navbar,
+.navbar-dark {
+  background-color: #2f3438 !important; /* lighter than before */
+  border-bottom: 1px solid #555c61;
+}
+
+/* Make navbar text a bit brighter for contrast */
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar .navbar-title {
+  color: #f3eee4 !important;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #ffffff !important;
+}
+
+
+/* Existing component tuning */
+.card,
+.modal-content,
+.dropdown-menu,
+.list-group-item {
+  background-color: #25292b;
+  border-color: var(--bs-border-color);
+}
+
+.form-control,
+.form-select {
+  background-color: #232729;
+  color: var(--bs-body-color);
+  border-color: var(--bs-border-color);
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #6e98c5;
+  box-shadow: 0 0 0 0.25rem rgba(110, 152, 197, 0.25);
+}

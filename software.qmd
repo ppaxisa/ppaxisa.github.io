@@ -12,4 +12,4 @@ bigQTL is an R package extending [`bigsnpr`](https://privefl.github.io/bigsnpr/)
 
 ## [plyranges](https://tidyomics.github.io/plyranges/)
 
-I am a contributor to the `plyranges` package as part of the [tidyomics](https://github.com/tidyomics) consortium. `plyranges` is an R package that provides a grammar for manipulating genomic ranges in a tidy and consistent manner. It allows users to perform common operations on genomic ranges, such as filtering, joining, and summarizing, using the tidy syntax. 
+I am a contributor to the `plyranges` package as part of the [tidyomics](https://github.com/tidyomics) consortium. `plyranges` is an R package that provides a grammar for manipulating genomic ranges in a tidy and consistent manner. It allows users to perform common operations on genomic ranges, such as filtering, joining, and summarizing, using the tidy syntax. I also maintain the [Tidy Ranges Tutorials](https://tidyomics.github.io/tidy-ranges-tutorial/).
