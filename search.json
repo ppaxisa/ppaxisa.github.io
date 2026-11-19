@@ -25,7 +25,7 @@
     "href": "software.html#plyranges",
     "title": "Software",
     "section": "plyranges",
-    "text": "plyranges\nI am a contributor to the plyranges package as part of the tidyomics consortium. plyranges is an R package that provides a grammar for manipulating genomic ranges in a tidy and consistent manner. It allows users to perform common operations on genomic ranges, such as filtering, joining, and summarizing, using the tidy syntax."
+    "text": "plyranges\nI am a contributor to the plyranges package as part of the tidyomics consortium. plyranges is an R package that provides a grammar for manipulating genomic ranges in a tidy and consistent manner. It allows users to perform common operations on genomic ranges, such as filtering, joining, and summarizing, using the tidy syntax. I also maintain the Tidy Ranges Tutorials."
   },
   {
     "objectID": "index.html",
